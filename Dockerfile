@@ -9,7 +9,7 @@ MAINTAINER Antonio Troina, thoeni@gmail.com
 ENV 	WSO2_SOFT_VER=3.0.0-ALPHA3
 
 # copy zip from local folder to container
-RUN	wget -P /opt https://github.com/wso2/product-mb/releases/download/v3.0.0-ALPHA/wso2mb-${WSO2_SOFT_VER}.zip && \
+RUN	wget -P /opt https://github.com/wso2/product-mb/releases/download/v${WSO2_SOFT_VER}/wso2mb-${WSO2_SOFT_VER}.zip && \
 	yum update -y && \
 	yum install -y unzip && \
         unzip /opt/wso2mb-${WSO2_SOFT_VER}.zip -d /opt && \
