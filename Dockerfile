@@ -16,9 +16,6 @@ RUN     wget -P /opt --user-agent="testuser" --referer="http://connect.wso2.com/
 	mv /opt/wso2mb-${WSO2_SOFT_VER} /opt/wso2mb && \
         rm /opt/wso2mb-${WSO2_SOFT_VER}.zip
 
-EXPOSE 9443
-EXPOSE 9763
-EXPOSE 8243
-EXPOSE 8280
+EXPOSE 9443 9763 8243 8280 10389 8000 11111 9999 45564 4000 5672 8672 1883 8833 7611 7000 7001 9160 7199
 
 CMD ["/opt/wso2mb/bin/wso2server.sh"]	
